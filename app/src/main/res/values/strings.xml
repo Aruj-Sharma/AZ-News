@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AZNews</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AD_ID">ca-app-pub-4627721969556810~5421430955</string>
+    <string name="BANNER_AD_ID">ca-app-pub-4627721969556810/1249702910</string>
+    <string name="INTER_AD_ID">ca-app-pub-4627721969556810/3279866236</string>
+    <string name="BANNER_AD_WEB_ID">ca-app-pub-4627721969556810/7520431945</string>
+</resources>
