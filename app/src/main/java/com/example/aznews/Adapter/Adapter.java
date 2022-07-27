@@ -60,9 +60,17 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.time.setText("Published At:- " + newsArrayList.get(position).getPublishedAt());
         holder.author.setText(newsArrayList.get(position).getAuthor());
         holder.heading.setText(newsArrayList.get(position).getTitle());
-        holder.content.setText(newsArrayList.get(position).getDescription());
 
-        Glide.with(context).load(newsArrayList.get(position).getUrlToImage()).into(holder.imageView);
+        if(newsArrayList.get(position).getDescription() != null)
+            holder.content.setText(newsArrayList.get(position).getDescription());
+        else
+            holder.content.setText("Short description not available. Kindly tap to view the full news");
+
+
+        if(newsArrayList.get(position).getUrlToImage() != null)
+            Glide.with(context).load(newsArrayList.get(position).getUrlToImage()).into(holder.imageView);
+        else
+            Glide.with(context).load(R.drawable.ic_launcher_foreground).into(holder.imageView);
 
 
 
